@@ -1,0 +1,1 @@
+This is demo view file for Satudata\Rlsprovinsi package using blade template

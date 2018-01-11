@@ -1,0 +1,16 @@
+Route::group(['prefix' => 'rlsprovinsi'], function() {
+    Route::get('/', 'RlsProvinsiController@getIndex');
+    Route::get('/list', 'RlsProvinsiController@getList');
+    Route::get('/detail/{id}', 'RlsProvinsiController@detailRlsProvinsi');
+    Route::get('/create', 'RlsProvinsiController@createRlsProvinsi');
+    Route::post('/create', 'RlsProvinsiController@createRlsProvinsiSave');
+    Route::get('/update/{id}', 'RlsProvinsiController@updateRlsProvinsi');
+    Route::post('/update/{id}', 'RlsProvinsiController@getIndex');
+    Route::post('/delete/{id}', 'RlsProvinsiController@getIndex');
+    Route::post('/activate/{id}', 'RlsProvinsiController@getIndex');
+    Route::post('/unactivate/{id}', 'RlsProvinsiController@getIndex');
+    Route::get('/getKota/{id}', 'RlsProvinsiController@getKota');
+    Route::get('/export/{id}', 'RlsProvinsiController@export');
+    Route::get('/getColumns', 'RlsProvinsiController@getColumns');
+    Route::get('/getProvinsi', 'RlsProvinsiController@getProvinsi');
+});
